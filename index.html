@@ -2050,6 +2050,127 @@ body {
     .detail-view-name { font-size: 0.9rem; }
 }
 
+    /* ============================================
+   FOOTER DESCRIPTION
+   ============================================ */
+
+.footer-desc {
+    font-size: 16px;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+/* ============================================
+   FOOTER SOCIAL ICONS
+   ============================================ */
+
+.footer-social {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Icon styling */
+.footer-social a i {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+/* Hover lift and scale */
+.footer-social a:hover {
+    transform: translateY(-4px) scale(1.1);
+}
+
+.footer-social a:hover i {
+    transform: scale(1.15);
+}
+
+/* ============================================
+   FACEBOOK - Official Brand Color
+   ============================================ */
+
+.footer-social a[href*="facebook"] {
+    background: rgba(24, 119, 242, 0.12);
+    color: #1877F2;
+    border: 2px solid rgba(24, 119, 242, 0.2);
+}
+
+.footer-social a[href*="facebook"]:hover {
+    background: #1877F2;
+    color: #ffffff;
+    border-color: #1877F2;
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.4);
+}
+
+/* ============================================
+   TIKTOK - Official Brand Colors
+   ============================================ */
+
+.footer-social a[href*="tiktok"] {
+    background: rgba(0, 0, 0, 0.08);
+    color: #000000;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.footer-social a[href*="tiktok"]:hover {
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* TikTok cyan/magenta glow effect on hover */
+.footer-social a[href*="tiktok"]:hover i {
+    text-shadow: 
+        2px 0px 0px #25F4EE,
+        -2px 0px 0px #FE2C55;
+}
+
+/* ============================================
+   WHATSAPP - Official Brand Color
+   ============================================ */
+
+.footer-social a[href*="wa.me"] {
+    background: rgba(37, 211, 102, 0.12);
+    color: #25D366;
+    border: 2px solid rgba(37, 211, 102, 0.2);
+}
+
+.footer-social a[href*="wa.me"]:hover {
+    background: #25D366;
+    color: #ffffff;
+    border-color: #25D366;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .footer-social a {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+}
 
 </style>
 
